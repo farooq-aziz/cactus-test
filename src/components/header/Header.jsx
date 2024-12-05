@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
 
-        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-[2%] left-0 w-full duration-1000 ease-in-out' : 'absolute top-[2%] duration-1000 ease-in-out'}`}>
+        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-0 left-0 w-full duration-1000 ease-in-out' : 'absolute top-[2%] duration-1000 ease-in-out'}`}>
             <div className="container h-full flex items-center">
                 <nav className="w-full h-full grid grid-cols-3 items-center mx-auto bg-primary px-8 rounded-xl">
                     <div className="bg-[#354F52] flex lg:hidden items-center justify-center p-2 rounded-md w-[40%] lg:w-[14%] h-[40px]">
@@ -40,7 +40,7 @@ const Header = () => {
                             <FaBars className="text-white text-[20px] cursor-pointer" onClick={toggleMenu} />
                         )}
                     </div>
-                    <div className="lg:flex items-center gap-20 h-full">
+                    <div className="hidden lg:flex items-center gap-20 h-full">
                         <div className={`w-[85%] md:w-[80%] lg:w-auto h-[100vh] lg:h-full flex items-center fixed top-0 z-50 lg:static bg-[#484848] lg:bg-transparent ${isMenuOpen ? 'left-0 duration-700 ease-in-out' : 'left-[-100%] duration-700 ease-in-out'}`}>
                             <ul className="w-full h-full flex lg:items-center flex-col lg:flex-row lg:gap-10 xl:gap-14 space-y-10 lg:space-y-0 p-5 lg:p-0 relative">
                                 <li className="lg:h-full flex lg:items-center">
